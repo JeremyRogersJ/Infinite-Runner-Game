@@ -8,7 +8,7 @@ const boxGeometry = new THREE.BoxGeometry(1, 1, 1)
 
 const floor1Material = new THREE.MeshStandardMaterial({ color: 'limegreen' })
 const floor2Material = new THREE.MeshStandardMaterial({ color: 'greenyellow' })
-const obstacleMaterial = new THREE.MeshStandardMaterial({ color: 'orangered' })
+const obstacleMaterial = new THREE.MeshStandardMaterial({ color: '#d3284d' })
 
 export function BlockStart({ position = [ 0, 0, 0 ] })
 {
@@ -27,8 +27,8 @@ export function BlockStart({ position = [ 0, 0, 0 ] })
                 <meshBasicMaterial toneMapped={ false } />
             </Text>
         </Float>
-        <mesh geometry={ boxGeometry } material={ floor1Material } position={ [ 0, - 0.1, 0 ] } scale={ [ 100, 0.2, 100 ] }  receiveShadow />
-        <RigidBody type="fixed" colliders="cuboid" position={ [ 0, - 0.1, 0 ] } scale={ [ 100, 0.2, 100 ] } />
+        <mesh geometry={ boxGeometry } material={ floor1Material } position={ [ 0, - 0.1, 0 ] } scale={ [ 4, 0.2, 4 ] }  receiveShadow />
+        <RigidBody type="fixed" colliders="cuboid" position={ [ 0, - 0.1, 0 ] } scale={ [ 4, 0.2, 4 ] } />
     </group>
 }
 
